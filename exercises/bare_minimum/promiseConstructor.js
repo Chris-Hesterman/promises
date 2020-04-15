@@ -11,16 +11,15 @@ var callbackReview = require('../../exercises/bare_minimum/callbackReview.js');
 
 // This function should retrieve the first line of the file at `filePath`
 var pluckFirstLineFromFileAsync = function (filePath) {
-  var pluckAsync = Promise.promisify(callbackReview.pluckFirstLineFromFile);
-
-  pluckAsync(filePath)
-    .then((firstLine) => {
-      console.localStorage('trigger');
-      return firstLine;
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  ///Promise.promisify(callbackReview.pluckFirstLineFromFile);
+  // pluckAsync(filePath)
+  //   .then((firstLine) => {
+  //     console.localStorage('trigger');
+  //     return firstLine;
+  //   })
+  //   .catch((err) => {
+  //     console.error(err);
+  //   });
 };
 
 // This function should retrieve the status code of a GET request to `url`
